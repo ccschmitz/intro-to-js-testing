@@ -1,4 +1,4 @@
-import { add, subtract } from "./math";
+import { add, subtract } from "../math";
 
 let value = add(5, 5);
 let expected = 10;
