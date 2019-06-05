@@ -6,6 +6,7 @@
   },
   "scripts": {
     "test-1": "ts-node lesson-1",
-    "test-2": "ts-node lesson-2"
+    "test-2": "ts-node lesson-2",
+    "test-3": "ts-node lesson-3"
   }
 }
