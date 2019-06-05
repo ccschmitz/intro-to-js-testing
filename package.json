@@ -1,12 +1,18 @@
 {
   "private": true,
   "dependencies": {
+    "@types/react": "^16.8.19",
+    "@types/react-dom": "^16.8.4",
+    "react": "^16.8.6",
+    "react-jsdom": "^3.0.0",
     "ts-node": "^8.2.0",
     "typescript": "^3.5.1"
   },
   "scripts": {
-    "test-1": "ts-node lesson-1",
-    "test-2": "ts-node lesson-2",
-    "test-3": "ts-node lesson-3"
+    "test:1": "ts-node lesson-1",
+    "test:2": "ts-node lesson-2",
+    "test:3": "ts-node lesson-3",
+    "test:4": "ts-node lesson-4",
+    "test:4:debug": "node -r ts-node/register --inspect-brk lesson-4/*"
   }
 }
