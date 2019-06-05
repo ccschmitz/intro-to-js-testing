@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "ts-node": "^8.2.0",
+    "typescript": "^3.5.1"
+  },
+  "scripts": {
+    "test-1": "ts-node lesson-1"
+  }
+}
