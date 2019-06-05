@@ -12,7 +12,7 @@ class Greeter extends React.Component<Props> {
 }
 
 describe('Greeter', () => {
-  it('renders their name', () => {
+  it('renders the name prop', () => {
     const component = mount(<Greeter name="Chris" />);
     expect(component.textContent).toContain("Chris")
   });

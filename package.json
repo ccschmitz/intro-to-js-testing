@@ -13,6 +13,7 @@
     "test:2": "ts-node lesson-2",
     "test:3": "ts-node lesson-3",
     "test:4": "ts-node lesson-4",
-    "test:4:debug": "node -r ts-node/register --inspect-brk lesson-4/*"
+    "test:4:debug": "node -r ts-node/register --inspect-brk lesson-4/*",
+    "test:5": "ts-node lesson-5"
   }
 }
