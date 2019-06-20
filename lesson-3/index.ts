@@ -1,18 +1,14 @@
 import { add, subtract } from '../math';
 
 describe('add', () => {
-  it('adds numbers together', () => {
+  it('adds 2 numbers', () => {
     expect(add(5, 5)).toBe(10);
   });
 });
 
 describe('subtract', () => {
-  it('subtracts numbers together', () => {
+  it('subtracts 2 numbers', () => {
     expect(subtract(7, 3)).toBe(4);
-  });
-
-  it('uses absolute values', () => {
-    expect(subtract(7, 10)).toBe(3);
   });
 });
 
@@ -24,9 +20,9 @@ function describe(title: string, test: () => void) {
 function it(title: string, test: () => void) {
   try {
     test();
-    console.log('\x1b[32m%s\x1b[0m', `✓ ${title}`);
+    console.log('  \x1b[32m%s\x1b[0m', `✓ ${title}`);
   } catch (error) {
-    console.error('\x1b[31m%s\x1b[0m', `✕ ${error}`);
+    console.error('  \x1b[31m%s\x1b[0m', `✕ ${title} => ${error}`);
   }
 }
 

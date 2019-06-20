@@ -14,7 +14,7 @@ class Greeter extends React.Component<Props> {
 describe('Greeter', () => {
   it('renders the name prop', () => {
     const component = mount(<Greeter name="Chris" />);
-    expect(component.textContent).toContain("Chris")
+    expect(component.textContent).toContain("Hello, Chris");
   });
 });
 
@@ -27,9 +27,9 @@ function describe(title, test) {
 function it(title, test) {
   try {
     test();
-    console.log('\x1b[32m%s\x1b[0m', `✓ ${title}`);
+    console.log('  \x1b[32m%s\x1b[0m', `✓ ${title}`);
   } catch (error) {
-    console.error('\x1b[31m%s\x1b[0m', `✕ ${error}`);
+    console.error('  \x1b[31m%s\x1b[0m', `✕ ${title} => ${error}`);
   }
 }
 
@@ -50,6 +50,6 @@ function expect(actual) {
 }
 
 // Test Renderer
-function mount(jsx) {
+function mount(jsx: any) {
   return ReactJSDOM.render(jsx);
 }
